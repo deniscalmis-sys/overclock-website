@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="OVERCLOCK Biohacking Lab — functional fuel for energy, focus and recovery." />
-    <meta name="theme-color" content="#f2efe8" />
+    <meta name="theme-color" content="#ead9be" />
     <meta property="og:url" content="https://overclocklab.uk" />
     <meta property="og:title" content="OVERCLOCK® — Biohacking Lab" />
     <meta property="og:description" content="Functional fuel for energy, focus and recovery." />
@@ -14,23 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=compact-field-kit-5" />
+    <link rel="stylesheet" href="styles.css?v=quiet-redesign-1" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
-    <div class="colour-lab" aria-label="Preview accent colours">
-      <span>COLOUR LAB</span>
-      <button type="button" data-colour="#c65f43" aria-label="Preview burnt clay" title="Burnt clay"></button>
-      <button type="button" data-colour="#d99a28" aria-label="Preview golden saffron" title="Golden saffron"></button>
-      <button class="active" type="button" data-colour="#8f2633" aria-label="Preview deep oxblood" title="Deep oxblood"></button>
-      <button type="button" data-colour="#d88378" aria-label="Preview dusty rose" title="Dusty rose"></button>
-    </div>
-
     <header class="header">
       <a class="brand" href="#top" aria-label="Overclock home">
         <img class="brand-icon" src="logo_black.svg" alt="Overclock Biohacking Lab" />
       </a>
-      <div class="status"><i></i> LAUNCH MODE / LDN</div>
+      <div class="status"><span><i></i>LAUNCH MODE / LDN</span><div class="palette-switcher" aria-label="Choose accent colour"><button class="active" type="button" data-accent="#6c7236" aria-label="Olive accent" title="Olive"></button><button type="button" data-accent="#7d2118" aria-label="Oxblood accent" title="Oxblood"></button><button type="button" data-accent="#9f6b53" aria-label="Clay accent" title="Clay"></button><button type="button" data-accent="#cfd5dd" aria-label="Cool grey accent" title="Cool grey"></button></div></div>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">MENU +</button>
       <nav id="nav" aria-label="Main navigation">
         <a href="#fuel">Fuel</a><a href="#merch">Field Kit</a><a href="#manifesto">Manifesto</a><a href="#lab">The Lab</a><a class="nav-order" href="mailto:hello@overclocklab.uk">Contact ↗</a>
@@ -38,28 +30,33 @@
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero hero-rebuilt">
         <div class="hero-meta mono">
-          <span>HUMAN SYSTEMS / OPTIMISED</span>
+          <span>OVERCLOCK / CAFE LAB</span>
           <span>51.5072° N — 0.1276° W</span>
         </div>
-        <div class="hero-combined">
-          <div class="hero-copy">
-            <h1>DON'T<br /><span>JUST</span> COPE.<br /><em>OVERCLOCK.</em></h1>
-            <div class="hero-bottom">
-              <p>Functional coffee. Performance food. Biohacking essentials. Built to upgrade your energy, focus and recovery.</p>
-              <a class="circle-link" href="#fuel" aria-label="Explore the system"><span>EXPLORE<br />THE SYSTEM</span><b>↓</b></a>
+        <div class="hero-rebuilt-grid">
+          <div class="hero-statement">
+            <p class="hero-kicker mono">FUNCTIONAL FUEL / LONDON</p>
+            <h1>DON’T JUST<br />COPE.<br /><em>OVERCLOCK.</em></h1>
+          </div>
+          <div class="hero-identity">
+            <div class="hero-identity-label mono"><span>01 / OPENING SIGNAL</span><b>LDN</b></div>
+            <div class="hero-intro">
+              <p>Functional coffee. Performance food. Biohacking essentials for energy, focus and recovery.</p>
+              <a href="#fuel" class="hero-enter mono">EXPLORE THE SYSTEM <span>↓</span></a>
             </div>
           </div>
-          <figure class="hero-sign">
-            <img src="lab-sign.jpg" alt="Illuminated Overclock Biohacking Lab sign on a dark exterior" />
-            <figcaption class="mono">LONDON / SIGNAL ACTIVE</figcaption>
-          </figure>
+        </div>
+        <div class="hero-footer mono">
+          <span>POWERED BY NATURE</span>
+          <span>REFINED BY SCIENCE</span>
+          <span>LDN / SIGNAL ACTIVE</span>
         </div>
       </section>
 
       <section class="signal seaweed-signal" aria-label="Brand statement">
-        <div>THE FUTURE OF EVERYDAY NUTRITION&nbsp; ✣ &nbsp;POWERED BY NATURE. REFINED BY SCIENCE.&nbsp; ✣ &nbsp;THE FUTURE OF EVERYDAY NUTRITION&nbsp; ✣ &nbsp;POWERED BY NATURE. REFINED BY SCIENCE.&nbsp; ✣ &nbsp;</div>
+        <div>OPENING 2027&nbsp; ✣ &nbsp;OVERCLOCK CAFE LAB&nbsp; ✣ &nbsp;OPENING 2027&nbsp; ✣ &nbsp;OVERCLOCK CAFE LAB&nbsp; ✣ &nbsp;</div>
       </section>
 
       <section class="fuel" id="fuel">
@@ -103,6 +100,10 @@
         </div>
       </section>
 
+      <section class="signal green-signal" aria-label="Ingredient principle">
+        <div>EVERY INGREDIENT HAS A JOB&nbsp; ✣ &nbsp;EVERY INGREDIENT HAS A JOB&nbsp; ✣ &nbsp;EVERY INGREDIENT HAS A JOB&nbsp; ✣ &nbsp;EVERY INGREDIENT HAS A JOB&nbsp; ✣ &nbsp;</div>
+      </section>
+
       <section class="lab" id="lab">
         <div class="lab-top">
           <div class="section-index mono">[ 04 / SYSTEM ETHICS ]</div>
@@ -132,6 +133,9 @@
         </div>
       </section>
 
+      <section class="signal green-signal green-signal-final" aria-label="Food with function principle">
+        <div>THIS IS NOT DIET FOOD. THIS IS FOOD WITH FUNCTION.&nbsp; ✣ &nbsp;THIS IS NOT DIET FOOD. THIS IS FOOD WITH FUNCTION.&nbsp; ✣ &nbsp;</div>
+      </section>
     </main>
 
     <footer>
@@ -143,6 +147,6 @@
         <a href="mailto:hello@overclocklab.uk">EMAIL ↗</a>
       </div>
     </footer>
-    <script src="script.js?v=contact-5"></script>
+    <script src="script.js?v=palette-switcher-1"></script>
   </body>
 </html>
