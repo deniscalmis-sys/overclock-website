@@ -1,0 +1,26 @@
+OVERCLOCK - GITHUB PAGES UPLOAD
+Approved Quietude + Ganache design, no seaweed imagery.
+
+1. Unzip this package. Open the website folder.
+2. In GitHub, open deniscalmis-sys/overclock-website.
+3. Choose Add file > Upload files. Upload the CONTENTS of website into the repository root, retaining the lettering/words folders. Do not upload the outer website folder or the ZIP itself. index.html must be at the repository root. Include .nojekyll if your file browser hides it.
+4. Commit the upload to the branch used for GitHub Pages (usually main). This publishes the changes if Pages already uses that branch.
+5. In Settings > Pages, use Deploy from a branch, main, /(root), then Save if the site is not already configured. If an existing publishing workflow is configured, use that workflow instead of changing it blindly.
+6. Wait for the Pages deployment to succeed, then visit https://deniscalmis-sys.github.io/overclock-website/ and refresh.
+
+Retain any existing CNAME file and custom-domain configuration. No CNAME is supplied here because DNS/domain changes are not part of this package. The existing canonical metadata references https://overclocklab.uk.
+
+FILES
+index.html: page content and links
+styles.css: responsive layout
+brand-update.css: approved colors and panels
+script.js: navigation
+lettering-size.js and lettering/: supplied vector headlines
+Images and SVG logos: required visual assets
+.nojekyll: serves the static website without Jekyll processing
+
+No build step, npm, or backend is needed. Google Fonts requires an internet connection. Email links open the visitor's email app.
+
+The package has been checked at 1440, 768, 390 and 320 pixels wide: images load, eight vector headings render, mobile navigation works, and no horizontal overflow or seaweed backgrounds are present.
+
+Nothing has been uploaded or published automatically.

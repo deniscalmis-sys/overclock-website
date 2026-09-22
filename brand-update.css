@@ -1,0 +1,87 @@
+/* Approved OVERCLOCK palette, artwork and responsive layout. */
+:root{--paper:#fff;--ink:#34292a;--olive:#34292a;--olive-text:#34292a;--accent-soft:#bdd3e2;--cream:#fff;--mist:#bdd3e2;--blue:#bdd3e2}
+.header,.header .brand,.fuel,footer{background:var(--blue);color:var(--ink)}
+.header a:focus-visible,.header button:focus-visible,footer a:focus-visible{outline-color:var(--ink)}
+.menu-toggle{cursor:pointer;min-height:44px}
+.skip-link{position:absolute;top:8px;left:8px;z-index:100;padding:12px 16px;background:#fff;color:#34292a;transform:translateY(-150%)}
+.skip-link:focus{transform:none}
+.protocol-dark{background:var(--ink);color:#fff}
+.protocol-red{background:var(--blue);color:var(--ink)}
+.protocol-paper{background:#fff;color:var(--ink)}
+.protocol-copy{position:relative;z-index:1}
+.protocol-grid{border:1px solid rgba(52,41,42,.2)}
+.manifesto,.lab{background:var(--ink);color:#fff}
+.manifesto .strike,.manifesto .answer,.manifesto .answer span,.manifesto-detail .mono,.lab h2 span,.waste-list b{color:#fff}
+.manifesto-detail,.waste-list div{border-color:rgba(255,255,255,.5)}
+.strike{text-decoration-color:#fff}
+.lab-top{gap:24px;align-items:flex-start}
+.lab-tag{background:var(--blue);color:var(--ink)}
+.merch-compact,.merch-card{background:#fff;color:var(--ink)}
+.merch h2 span,.merch-card figcaption b{color:var(--ink)}
+.merch-card img{background:#fff;filter:none}
+.merch-card:hover img{filter:none}
+.brand-invert img{filter:none}
+.footer-links{max-width:55%}
+.fuel h2,.protocol h3,.strike,.answer,.lab>h2,.merch h2{position:relative}
+.lettering-ready{-webkit-text-fill-color:transparent;text-decoration-color:transparent}
+.vector-word{position:absolute;display:block;background:currentColor;mask:var(--word-art) 0 0/100% 100% no-repeat;-webkit-mask:var(--word-art) 0 0/100% 100% no-repeat;pointer-events:none}
+
+/* The approved split hero: branded iced latte and black headline panel. */
+.designer-hero{padding:0;background:#34292a;color:#fff;height:max(720px,calc(100svh - 104px));min-height:720px;max-height:none}
+.designer-hero::before{display:none}
+.designer-hero-photo{position:absolute;inset:0 auto 0 0;width:40%;height:100%;object-fit:cover;object-position:52% center;background:var(--blue)}
+.designer-hero-panel{position:absolute;inset:0 0 0 40%;padding:28px clamp(24px,4vw,64px);display:flex;flex-direction:column;align-items:flex-start;background:#34292a}
+.designer-hero-label{margin:0;font-size:11px;letter-spacing:.06em}
+.hero .designer-hero-title{position:relative;flex:none;margin:32px 0 24px;width:min(100%,620px);font-size:0;line-height:0;color:#fff;align-self:center}
+.designer-hero-title img{display:block;width:100%;height:auto;filter:brightness(0) invert(1)}
+.designer-hero-bottom{margin-top:auto;display:flex;align-items:center;gap:28px;width:100%;justify-content:space-between}
+.designer-hero-copy{margin:0;max-width:440px;font-size:clamp(14px,1.4vw,21px);line-height:1.45;font-weight:500}
+.designer-hero-enter{width:108px;height:108px;flex:0 0 108px;border:1px solid #fff;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;text-align:center;font-size:10px;line-height:1.3;transition:background .2s,color .2s}
+.designer-hero-enter:hover{background:#fff;color:#34292a}
+.designer-arrow{font:32px/1 Arial,sans-serif}
+.designer-hero-location{margin:22px 0 0;font-size:10px;letter-spacing:.06em}
+@media(max-width:1100px){.header nav{gap:16px}.status{font-size:9px}.designer-hero-panel{padding:28px}.designer-hero-bottom{gap:16px}.designer-hero-enter{width:88px;height:88px;flex-basis:88px;font-size:9px}}
+@media(max-width:900px){.header nav{gap:18px}.lab-top{flex-wrap:wrap}.footer-links{max-width:50%}.hero .designer-hero-title{margin-top:36px}.designer-hero-label{font-size:9px}.designer-hero-copy{font-size:15px}}
+@media(max-width:600px){
+ .designer-hero{height:auto;min-height:0;max-height:none;display:flex;flex-direction:column}
+ .designer-hero-photo{position:relative;inset:auto;display:block;width:100%;height:auto;aspect-ratio:1122 / 1402;object-fit:contain}
+ .designer-hero-panel{position:relative;inset:auto;width:100%;padding:28px 24px 24px}
+ .hero .designer-hero-title{width:100%;margin:28px 0 36px}
+ .designer-hero-bottom{gap:18px}
+ .designer-hero-copy{flex:1;min-width:0;font-size:14px}
+ .designer-hero-enter{width:76px;height:76px;flex-basis:76px;font-size:8px}
+ .designer-hero-location{font-size:9px;margin-top:22px}
+ .lab-top{gap:18px}.lab-tag{font-size:10px;line-height:1.5}
+ .merch-head{gap:20px}.footer-links{max-width:100%;gap:20px}
+ .merch-card figcaption{font-size:10px}.waste-list div{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.designer-hero-enter{transition:none}}
+
+/* Reduce slogan scale consistently while retaining the supplied lettering. */
+.hero .designer-hero-title{width:min(72%,446.4px);margin:auto 0}
+.designer-hero-bottom{margin-top:0}
+.fuel h2,.lab>h2{font-size:clamp(28.8px,3.6vw,54.72px)}
+.merch h2{font-size:clamp(23.04px,2.88vw,41.76px)}
+.strike{font-size:clamp(23.04px,2.88vw,46.08px)}
+.answer{font-size:clamp(30.24px,3.96vw,60.48px)}
+.protocol h3{font-size:clamp(21.6px,2.07vw,30.6px)}
+.signal div{animation-duration:24s}
+@media(max-width:600px){.fuel h2,.lab>h2{font-size:7.56vw}.hero .designer-hero-title{margin:48px 0}}
+
+/* Pantone Quietude and Ganache screen palette. */
+.header .brand-icon,.brand-invert img{filter:brightness(0) saturate(100%) invert(14%) sepia(8%) saturate(1277%) hue-rotate(305deg) brightness(94%) contrast(88%)}
+.signal{background:var(--ink);color:#fff}
+.signal:before{display:none}
+
+/* Ganache panels with contrasting white lettering; Quietude areas retain Ganache text. */
+body{color:var(--ink)}
+.designer-hero,.designer-hero-panel,.protocol-dark,.protocol-paper,.manifesto,.lab,.merch-compact,.merch-card{background:var(--ink);color:#fff}
+.manifesto .strike,.manifesto .answer,.manifesto .answer span,.manifesto-detail .mono,.lab h2 span,.waste-list b,.hero .designer-hero-title,.merch h2 span,.merch-card figcaption b{color:#fff}
+.designer-hero-title img{filter:brightness(0) invert(1)}
+.designer-hero-enter{border-color:#fff;color:#fff}
+.designer-hero-enter:hover{background:var(--blue);color:var(--ink)}
+.manifesto-detail,.waste-list div,.protocol-dark .formula,.protocol-paper .formula,.merch-card,.merch-card figcaption,.merch-compact{border-color:rgba(255,255,255,.5)}
+.strike{text-decoration-color:#fff}
+.lettering-ready{text-decoration-color:transparent}
+.signal{background:var(--blue);color:var(--ink)}
+.signal:before{display:none}
