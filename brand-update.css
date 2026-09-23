@@ -85,3 +85,6 @@ body{color:var(--ink)}
 .lettering-ready{text-decoration-color:transparent}
 .signal{background:var(--blue);color:var(--ink)}
 .signal:before{display:none}
+
+/* Slightly larger useful product copy. */
+.protocol-copy p{font-size:15px;line-height:1.6}
