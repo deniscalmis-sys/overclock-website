@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" role="img" aria-labelledby="title desc">
+  <title id="title">Overclock Lab Opening 2027 banner</title>
+  <desc id="desc">Overclock Lab, Opening 2027, functional fuel for energy, focus and recovery.</desc>
+  <rect width="1500" height="500" fill="#34292a"/>
+  <image href="logo_white.svg" x="92" y="110" width="235" height="235" preserveAspectRatio="xMidYMid meet"/>
+  <text x="380" y="230" fill="#bdd3e2" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="7">CAFÉ LAB</text>
+  <text x="375" y="330" fill="#fff" font-family="Arial, sans-serif" font-size="92" font-weight="700" letter-spacing="4">OVERCLOCK</text>
+</svg>

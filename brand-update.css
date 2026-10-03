@@ -99,3 +99,32 @@ body{color:var(--ink)}
 .lab .merch-compact{background:var(--ink);color:#fff;padding-bottom:clamp(76px,8vw,124px)}
 .lab .merch h2,.lab .merch h2 span{color:#fff}
 @media(max-width:600px){.lab{padding-bottom:0}.lab .merch-compact{padding-bottom:65px}}
+
+
+/* Clearer actions, readable labels and more compact manifesto spacing. */
+.designer-hero-enter{width:132px;height:132px;flex-basis:132px;font-size:13px;font-weight:600;border-width:2px}
+.designer-hero-enter:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+.section-index,.manifesto-side,.kick{font-size:13px;line-height:1.5}
+.section-index{opacity:.85}
+.protocol-top,.formula,.designer-hero-label,.designer-hero-location{font-size:12px;line-height:1.5}
+.merch-card figcaption{font-size:12px;line-height:1.4;min-height:50px;height:auto;padding:12px 11px;gap:8px}
+footer p,.footer-links{font-size:13px;line-height:1.5}
+.footer-links{align-items:center;gap:16px 22px}
+.footer-links a{display:inline-flex;align-items:center;min-height:44px}
+.footer-links .footer-contact{padding:12px 18px;background:var(--ink);color:#fff;border:2px solid var(--ink);font-weight:600}
+.footer-links .footer-contact:hover{background:transparent;color:var(--ink)}
+@media(min-width:901px){.manifesto{padding-block:clamp(64px,5.5vw,84px)}.manifesto .answer{margin-bottom:32px}}
+@media(max-width:600px){
+ .designer-hero-bottom{flex-direction:column;align-items:flex-start;gap:22px}
+ .designer-hero-copy{flex:auto;font-size:15px}
+ .designer-hero-enter{width:auto;height:auto;min-height:52px;flex-basis:auto;border-radius:0;padding:12px 18px;flex-direction:row;gap:24px;font-size:13px}
+ .designer-hero-enter br{display:none}
+ .designer-hero-enter span:first-child{word-spacing:.12em}
+ .designer-arrow{font-size:24px}
+ .section-index,.manifesto-side,.kick{font-size:13px}
+ .designer-hero-label,.designer-hero-location{font-size:12px}
+ .merch-card figcaption{font-size:12px;min-height:54px;padding:10px 8px;letter-spacing:0}
+ .footer-links{gap:12px 22px;max-width:100%}
+}
+
+@media(min-width:901px){.manifesto{grid-template-columns:180px 1fr;column-gap:24px}}
