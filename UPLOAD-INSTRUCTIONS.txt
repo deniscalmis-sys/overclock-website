@@ -1,5 +1,1 @@
-OVERCLOCK WEBSITE UPDATE
-
-Unzip this archive. Open the website folder. Upload its contents into the same GitHub repository folder as your current index.html, replacing existing files with matching names. Include cups-framed.jpg, all four merch WebP files, and the lettering folder. Upload the files inside website, not the enclosing website folder. Commit the changes to publish through your existing GitHub website setup.
-
-Includes: approved cups hero, larger Explore button, more readable labels and captions, tighter desktop manifesto spacing, early-loading product images, Email us button, and approved blue / Ganache / blue sections with moving-strip borders.
+Unzip this archive. Open the website folder and upload its contents to the root of your existing website repository, replacing files with the same names. Include the lettering folder and all image files. Do not upload the ZIP itself or create an extra website folder in your repository. Commit the changes to publish through your existing GitHub Pages setup.

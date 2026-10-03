@@ -128,3 +128,29 @@ footer p,.footer-links{font-size:13px;line-height:1.5}
 }
 
 @media(min-width:901px){.manifesto{grid-template-columns:180px 1fr;column-gap:24px}}
+
+/* Balance the cups photograph and Ganache opening panel. */
+@media(min-width:601px){
+ .designer-hero{height:clamp(560px,44vw,680px);min-height:560px}
+ .designer-hero-photo{width:50%}
+ .designer-hero-panel{left:50%}
+ .hero .designer-hero-title{width:min(72%,380px)}
+}
+@media(max-width:600px){.designer-hero-photo{aspect-ratio:3 / 2}}
+
+/* A consistent reading edge and a stronger closing invitation. */
+@media(min-width:901px){
+ .manifesto{grid-template-columns:1fr;row-gap:24px}
+ .manifesto-side{margin:0}
+ .merch-head{grid-template-columns:1fr;gap:24px}
+}
+.lab-grid{margin-top:32px}
+@media(max-width:600px){
+ .protocol{min-height:240px;padding:20px;gap:22px}
+ .protocol-copy p{font-size:14px;line-height:1.5}
+ .lab-grid{margin-top:28px}
+}
+@media(prefers-reduced-motion:no-preference){
+ .flow-reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+ .flow-reveal.is-visible{opacity:1;transform:none}
+}
