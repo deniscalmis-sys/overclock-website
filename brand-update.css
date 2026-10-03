@@ -1,5 +1,6 @@
 /* Approved OVERCLOCK palette, artwork and responsive layout. */
 :root{--paper:#fff;--ink:#34292a;--olive:#34292a;--olive-text:#34292a;--accent-soft:#bdd3e2;--cream:#fff;--mist:#bdd3e2;--blue:#bdd3e2}
+.opening-banner{display:flex;align-items:center;justify-content:center;gap:16px;min-height:42px;padding:9px 16px;background:var(--blue);color:var(--ink);font:700 12px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;text-align:center}.opening-banner img{width:27px;height:27px;object-fit:contain}.opening-banner span{white-space:nowrap}
 .header,.header .brand,.fuel,footer{background:var(--blue);color:var(--ink)}
 .header a:focus-visible,.header button:focus-visible,footer a:focus-visible{outline-color:var(--ink)}
 .menu-toggle{cursor:pointer;min-height:44px}
@@ -88,3 +89,13 @@ body{color:var(--ink)}
 
 /* Slightly larger useful product copy. */
 .protocol-copy p{font-size:15px;line-height:1.6}
+
+/* Visible ticker boundaries and alternating lower section colors. */
+.signal{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.lab{background:var(--blue);color:var(--ink);padding-bottom:0}
+.lab>h2,.lab>h2 span,.lab .waste-list b{color:var(--ink)}
+.lab .waste-list,.lab .waste-list div{border-color:var(--ink)}
+.lab .lab-tag{border-color:var(--ink)}
+.lab .merch-compact{background:var(--ink);color:#fff;padding-bottom:clamp(76px,8vw,124px)}
+.lab .merch h2,.lab .merch h2 span{color:#fff}
+@media(max-width:600px){.lab{padding-bottom:0}.lab .merch-compact{padding-bottom:65px}}

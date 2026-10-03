@@ -1,0 +1,1 @@
+Unzip this folder. Upload brand-update.css into the same GitHub repository folder as index.html, replacing the existing brand-update.css. Commit the change. Upload the CSS file itself, not this enclosing folder. This update adds visible moving-strip borders and the approved blue / Ganache / blue lower sections.
